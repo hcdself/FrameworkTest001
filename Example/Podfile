@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'FrameworkTest001_Example' do
+  pod 'FrameworkTest001', :path => '../'
+
+  target 'FrameworkTest001_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
