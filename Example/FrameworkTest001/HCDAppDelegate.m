@@ -7,12 +7,15 @@
 //
 
 #import "HCDAppDelegate.h"
+#import <FrameworkTest001/Student.h>
 
 @implementation HCDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    Student *std = [[Student alloc] init];
+    
     return YES;
 }
 
